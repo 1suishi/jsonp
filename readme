@@ -1,0 +1,5 @@
+而JSONP所做的就是这个事情，只不过调用的语句从远程服务器传来，动态加入到你的页面中去执行而已。
+
+参考：
+	http://www.cnblogs.com/vimsk/archive/2013/01/29/2877888.html
+	http://kb.cnblogs.com/page/139725/
