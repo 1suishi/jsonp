@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+		<title>JSONP</title>
+
+		
+		<!-- // <script type="text/javascript" src="./out.js" ></script> -->
+		<script type="text/javascript">
+
+
+			//jsonp 回调函数
+
+			function localFun(data){
+				console.log("localFun data is : " + data.name + ", "+ data.value);
+				var p = document.getElementsByTagName('p')[0];
+				p.innerText += data.name + ", "+ data.value;
+			}
+
+			var head  = document.getElementsByTagName("head")[0];
+
+			// var url= "http://sandbox.runjs.cn/uploads/rs/415/aneziifz/out.js";
+			var url = "out.js"
+
+			var script = document.createElement('script');
+
+    		script.type = "text/javascript"; 
+    		script.setAttribute('src', url);
+    		head.appendChild(script);
+
+		</script>
+
+		
+	</head>
+	<body>
+
+		<p></p>
+
+	</body>
+</html>

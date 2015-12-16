@@ -1,0 +1,33 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+		<title>test</title>
+
+	
+		<script type="text/javascript">
+
+			var head= document.getElementsByTagName('head')[0];  
+
+			var url = "out.js"
+
+			var script = document.createElement('script');
+			script.type = "text/javascript"; 
+
+    		// script.onload = function() {      
+			   //  console.log("finish");			     
+		    // };  
+    		
+    		script.src= url;
+    		head.appendChild(script);  // 开始加载 
+
+		</script>
+
+		
+	</head>
+	<body>
+
+		<p></p>
+
+	</body>
+</html>
