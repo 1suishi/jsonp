@@ -55,7 +55,7 @@ http.createServer(function(req,res){
                     +  ''
                     +  '$("#getFo").click(function(){'
                     +'    $.ajax({'
-                    +            'url:"http://123.57.161.123:9099/followers.json",'
+                    +            'url:"http://123.57.161.231:9099/followers.json",'
                     +       'type:"get",'
                     +       'success:function(json){'
                     +       '    alert(json.users[0].name);'
