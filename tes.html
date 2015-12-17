@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<head>
+    
+     <script src="http://libs.baidu.com/jquery/1.9.0/jquery.js"></script>
+     
+      <!-- // <script type="text/javascript" src="http://www.a.com:8088/index?callback=getFollowers"></script>' -->
+     <script>
+      $(function(){
+        $("#getFo").click(function(){
+          $.ajax({
+              url:"http://123.57.161.231:9099/followers.json",
+              type:"get",
+              success:function(json){
+                alert(json.users[0].name);
+              }
+          });
+        });
+      });
+     </script>
+</head>
+<body>
+     <h1>hello i am server b </h1>
+     <input id="getFo" type="button" value="获取我的粉丝"/>
+</body>
+</html>
