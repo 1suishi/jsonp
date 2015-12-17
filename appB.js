@@ -47,7 +47,7 @@ http.createServer(function(req,res){
         res.writeHead(200,{'Content-Type':'text/html;charset=utf-8'});
         var html = '<!DOCTYPE html>'
                     +'<head>'
-                    +'<script type="text/javascript" src="jquery.js"></script>'
+                    +'<script src="http://libs.baidu.com/jquery/1.9.0/jquery.js"></script>'
                     
                     +'<script type="text/javascript" src="http://www.a.com:8088/index?callback=getFollowers"></script>'
                     +'<script>'
