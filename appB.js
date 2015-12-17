@@ -77,7 +77,7 @@ http.createServer(function(req,res){
 
     }else if(urlPath === '/followers.json'){
         res.writeHead(200,{'Content-Type':'application/json;charset=utf-8'});
-        res.writeHead({'Access-Control-Allow-Origin':*});
+        res.writeHead({'Access-Control-Allow-Origin':'*'});
 
         var followers = {
                                 "users" : [
