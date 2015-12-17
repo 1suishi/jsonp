@@ -32,7 +32,7 @@ http.createServer(function(req,res){
 
     if(suffix === 'js'){
         localPath += (dir ? dir + '\\' : '') + fileName;
-        path.exists(localPath,function(exists){
+        fs.exists(localPath,function(exists){
             if(exists){
                 getFile(localPath,'js',res);
             }else{
